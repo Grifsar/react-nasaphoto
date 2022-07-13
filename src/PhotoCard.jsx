@@ -20,7 +20,7 @@ const PhotoCard = ({ photo }) => {
             {photo.media_type !== 'image' && photo.code === null &&
             // className={photo ? '' : 'hidden'}
                 <div className={photo ? 'p-3' : 'hidden'} >
-                    <h3 className="text-center">Today's photo of the day isn't actually an image</h3>
+                    <h3 className="text-center">There isn't a photo for this date. Please try another date.</h3>
                 </div>
             }
         </div >
