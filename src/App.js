@@ -1,4 +1,5 @@
 //6/21/2022 has a smaller than average photo
+//11/02/2015 might not have a photo
 //TODO add photo function - may need to play with tailwind to get this looking good, if not manually style this
 //TODO play around with styling via Tailwind more
 //"homepage": "/react-nasaphoto",
@@ -17,6 +18,7 @@ const nasa = 'https://api.nasa.gov/planetary/apod';
 const App = () => {
   //fetches the photo
   const searchPhotos = async (date) => {
+    setPhoto('');
     const response = await fetch(`${nasa}?date=${date}&api_key=${nasaApiKey}`);
     const data = await response.json();
     //05/10/2010
@@ -40,7 +42,7 @@ const App = () => {
     searchPhotos(todayFormatted);
   }, [todayFormatted]); // the ,[] should make sure this runs once on load
   return (
-    <div className="App container mx-auto pt-4 bg-white">
+    <div className="App container mx-auto pt-4 bg-white min-h-full">
      
         <header className='text-center'>
           <h1 className='text-4xl font-semibold'>Nasa Photo of the&nbsp;Day</h1>
