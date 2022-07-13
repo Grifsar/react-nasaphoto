@@ -43,12 +43,12 @@ const App = () => {
     <div className="App container mx-auto pt-4 bg-white">
      
         <header className='text-center'>
-          <h1 className='text-4xl font-semibold'>Nasa API Experiments</h1>
-          <h2 className='text-2xl font-semibold'>Photo of the day</h2>
+          <h1 className='text-4xl font-semibold'>Nasa Photo of the Day</h1>
         </header>
         <menu className='mt-6 text-center'>
           <label htmlFor="photoDay">
             <p>Pick a date between June 20th, 1995 and today to display the photo for that day</p>
+            <p>These photos are being pulled from Nasa's photo of the day API and they have not been optimized for the web. Please be patient as they load.</p>
           </label>
           <input className='border-2 border-indigo-700 text-indigo-700 font-semibold mt-6' type="date" name="photoDay" id="photoDay" min="1995-06-20" max={todayFormatted}
             value={searchDate}
