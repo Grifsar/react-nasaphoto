@@ -43,7 +43,7 @@ const App = () => {
     <div className="App container mx-auto pt-4 bg-white">
      
         <header className='text-center'>
-          <h1 className='text-4xl font-semibold'>Nasa Photo of the Day</h1>
+          <h1 className='text-4xl font-semibold'>Nasa Photo of the&nbsp;Day</h1>
         </header>
         <menu className='mt-6 text-center'>
           <label htmlFor="photoDay">
