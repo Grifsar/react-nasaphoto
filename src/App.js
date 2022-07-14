@@ -21,8 +21,8 @@ const App = () => {
   //fetches the photo
   const searchPhotos = async (date) => {
     setPhoto('');
-    // const response = await fetch(`${nasa}?date=${date}&api_key=${nasaApiKey}`);
-    const data = `/.netlify/functions/app?date=${date}`;
+    const response = await fetch(`/.netlify/functions/app?date=${date}`);
+    const data = await response.json();
     //05/10/2010
     console.log({data})
     setPhoto(data);
