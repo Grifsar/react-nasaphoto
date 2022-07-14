@@ -24,7 +24,7 @@ const App = () => {
     // const response = await fetch(`${nasa}?date=${date}&api_key=${nasaApiKey}`);
     const data = `/.netlify/functions/app?date=${date}`;
     //05/10/2010
-    // console.log({data})
+    console.log({data})
     setPhoto(data);
   }
   function formatDate4API(date) {
