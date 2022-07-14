@@ -14,7 +14,7 @@ import PhotoCard from './PhotoCard';
 const today = new Date();
 
 // const nasaApiKey = process.env.REACT_APP_NASA_API;
-const nasa = 'https://api.nasa.gov/planetary/apod';
+// const nasa = 'https://api.nasa.gov/planetary/apod';
 // const photoDay = nasa + 'planetary/apod';
 
 const App = () => {
