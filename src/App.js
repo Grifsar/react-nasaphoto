@@ -1,6 +1,7 @@
 //6/21/2022 has a smaller than average photo
 //11/02/2015 might not have a photo
 //04/21/2015
+//03/25/2012
 //TODO add photo function - may need to play with tailwind to get this looking good, if not manually style this
 //TODO play around with styling via Tailwind more
 //"homepage": "/react-nasaphoto",
@@ -12,7 +13,7 @@ import PhotoCard from './PhotoCard';
 
 const today = new Date();
 
-const nasaApiKey = process.env.REACT_APP_NASA_API;
+// const nasaApiKey = process.env.REACT_APP_NASA_API;
 const nasa = 'https://api.nasa.gov/planetary/apod';
 // const photoDay = nasa + 'planetary/apod';
 
@@ -20,8 +21,8 @@ const App = () => {
   //fetches the photo
   const searchPhotos = async (date) => {
     setPhoto('');
-    const response = await fetch(`${nasa}?date=${date}&api_key=${nasaApiKey}`);
-    const data = await response.json();
+    // const response = await fetch(`${nasa}?date=${date}&api_key=${nasaApiKey}`);
+    const data = `/.netlify/functions/app?date=${date}`;
     //05/10/2010
     // console.log({data})
     setPhoto(data);
