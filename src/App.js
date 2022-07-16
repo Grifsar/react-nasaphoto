@@ -22,7 +22,7 @@ const App = () => {
   const searchPhotos = async (date) => {
     setPhoto('');
     //https://grand-croissant-0ed792.netlify.app
-    const response = await fetch(`/.netlify/functions/nasaPhotoKey?date=${date}`, {'mode': 'no-cors'});
+    const response = await fetch(`https://grand-croissant-0ed792.netlify.app/.netlify/functions/nasaPhotoKey?date=${date}`, {'mode': 'no-cors'});
     const data = await response.json();
     //05/10/2010
     console.log({data})
