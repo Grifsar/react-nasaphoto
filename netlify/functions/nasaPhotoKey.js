@@ -1,5 +1,6 @@
 // const axios = require('axios');
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
+const fetch = require("node-fetch");
 
 exports.handler = async function(event, context){
     console.log('entered function');
