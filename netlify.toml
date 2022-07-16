@@ -4,6 +4,7 @@
 #  from = "/*"
 #  to = "/index.html"
 #  status = 200
+/api/*  https://api.nasa.gov/:splat  200
 
 [[headers]]
    for = "/.netlify/functions/*"
