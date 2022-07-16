@@ -1,10 +1,9 @@
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
 [[redirects]]
-#  from = "/*"
-#  to = "/index.html"
-#  status = 200
-/api/*  https://api.nasa.gov/:splat  200
+ from = "/api/*"
+  to = "https://api.nasa.gov/:splat"
+  status = 200
 
 [[headers]]
    for = "/.netlify/functions/*"
