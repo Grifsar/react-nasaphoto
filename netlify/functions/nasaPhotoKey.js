@@ -12,11 +12,17 @@ exports.handler = async function(event, context){
         return {
           statusCode: 200,
           body: JSON.stringify(response.data),
+          headers: {
+            "access-control-allow-origin": "*",
+          },
         };
       } catch (err) {
         return {
           statusCode: 404,
           body: err.toString(),
+          headers: {
+            "access-control-allow-origin": "*",
+          },
         };
       }
 
