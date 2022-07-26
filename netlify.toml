@@ -1,17 +1,4 @@
-# The following redirect is intended for use with most SPAs that handle
-# routing internally.
-[[redirects]]
- from = "/api/*"
-  to = "https://api.nasa.gov/:splat"
-  status = 200
-
-[[headers]]
-   for = "/.netlify/functions/*"
-   [headers.values]
-      Access-Control-Allow-Origin = "*"
-       # These are optional
-
 [build]
   command = "npm run build"
-  functions = "lamda" #  netlify-lambda reads this
+  functions = "lambda" # netlify-lambda reads this
   publish = "build"
