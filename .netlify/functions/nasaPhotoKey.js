@@ -1,5 +1,5 @@
 // const { resolvePath } = require("react-router-dom");
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 const url = 'https://api.nasa.gov/planetary/apod';
 const apikey = process.env.REACT_APP_NASA_API;
 
