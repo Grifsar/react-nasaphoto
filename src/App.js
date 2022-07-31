@@ -12,15 +12,17 @@ import PhotoCard from './PhotoCard';
 
 const today = new Date();
 
-const nasaApiKey = process.env.REACT_APP_NASA_API;
-const nasa = 'https://api.nasa.gov/planetary/apod';
+// const nasaApiKey = process.env.REACT_APP_NASA_API;
+// const nasa = 'https://api.nasa.gov/planetary/apod';
 // const photoDay = nasa + 'planetary/apod';
 
 const App = () => {
   //fetches the photo
   const searchPhotos = async (date) => {
     setPhoto('');
-    const response = await fetch(`${nasa}?date=${date}&api_key=${nasaApiKey}`);
+    // const response = await fetch(`${nasa}?date=${date}&api_key=${nasaApiKey}`);
+    
+    const response = await fetch(`/.netlify/functions/nasaPhotoKey?date=${date}`);
     const data = await response.json();
     //05/10/2010
     // console.log({data})
