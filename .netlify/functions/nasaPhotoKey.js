@@ -31,23 +31,4 @@ exports.handler = async (event, context) => {
       })
     }
   }
-
-  //   const params = new URLSearchParams([
-  //     ['date', `${date}`],
-  //     ['api_key', `${apikay}`]
-  // ]);
-  //   
-  //   try {
-  //     const response = await axios.get(url, {params});
-  //     return {
-  //       statusCode: 200,
-  //       body: JSON.stringify(response.data)
-  //     }
-  //   }
-  //   catch(error){
-  //     return {
-  //       statusCode: 500,
-  //       body: JSON.stringify(error)
-  //     }
-  //   }
 };
