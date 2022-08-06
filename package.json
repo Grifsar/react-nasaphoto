@@ -7,8 +7,6 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
-    "http-proxy-middleware": "^2.0.6",
-    "netlify-lambda": "^2.0.15",
     "node-fetch": "^3.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -17,7 +15,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "api:serve": "netlify-lambda serve .netlify/functions",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
