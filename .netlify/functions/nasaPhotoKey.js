@@ -10,13 +10,14 @@ exports.handler = async (event, context) => {
   //   ['date', `${date}`],
   //   ['api_key', `${apikey}`]
   // ]);
-  const url = 'https://api.nasa.gov/planetary/apod';
+  // const url = 'https://api.nasa.gov/planetary/apod';
   try {
-    const response = await axios.get(url, {
+    const response = await axios.get({
       params: {
         apikey: process.env.REACT_APP_NASA_API,
         date: event.queryStringParameters.date
-      }
+      },
+      url: 'https://api.nasa.gov/planetary/apod'
     });
     return {
       statusCode: 200,
